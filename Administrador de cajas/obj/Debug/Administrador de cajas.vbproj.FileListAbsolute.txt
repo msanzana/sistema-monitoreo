@@ -1,0 +1,14 @@
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\Administrador de cajas.exe.config
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\Administrador de cajas.exe
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\Administrador de cajas.pdb
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\Administrador de cajas.xml
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.vbprojResolveAssemblyReference.cache
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador_de_cajas.frmPrincipal.resources
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador_de_cajas.Resources.resources
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.vbproj.GenerateResource.Cache
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.vbproj.CoreCompileInputs.cache
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.exe
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.xml
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.pdb
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador_de_cajas.FrmConfiguracionConexion.resources
+C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\MySql.Data.dll
