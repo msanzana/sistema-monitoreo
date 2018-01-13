@@ -26,10 +26,6 @@ Module Declaraciones
             If Credenciales_BD() = True Then
                 frmAutorizacion.ShowDialog()
                 'Ceteo de variables principales    
-
-
-
-
             Else
                 MsgBox("PROBLEMA DE LECTURA CREDENCIALES BASE DE DATOS, EL PROGRAMA SE CERRARA", MsgBoxStyle.Exclamation, SG_Sistema)
                 End

@@ -53,7 +53,7 @@ Partial Class frmAutorizacion
         Me.txtUsuario.Location = New System.Drawing.Point(113, 36)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(146, 20)
-        Me.txtUsuario.TabIndex = 1
+        Me.txtUsuario.TabIndex = 0
         Me.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtContrasena
