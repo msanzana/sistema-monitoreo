@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <configuracion>
   <parametros>
-    <direccionbd>localhost</direccionbd>
+    <direccionbd>192.168.0.8</direccionbd>
     <nombrebd>db_administrador_dispositivos</nombrebd>
     <puertobd>3306</puertobd>
     <empresa>lily</empresa>

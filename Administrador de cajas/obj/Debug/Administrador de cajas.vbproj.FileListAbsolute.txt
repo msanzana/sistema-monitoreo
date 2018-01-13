@@ -12,3 +12,16 @@ C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas
 C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador de cajas.pdb
 C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\obj\Debug\Administrador_de_cajas.FrmConfiguracionConexion.resources
 C:\Users\DESARROLLO\Documents\Visual Studio 2017\Projects\Administrador de cajas\Administrador de cajas\bin\Debug\MySql.Data.dll
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\bin\Debug\Administrador de cajas.exe.config
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\bin\Debug\Administrador de cajas.exe
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\bin\Debug\Administrador de cajas.pdb
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\bin\Debug\Administrador de cajas.xml
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador de cajas.vbprojResolveAssemblyReference.cache
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador_de_cajas.frmAutorizacion.resources
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador_de_cajas.FrmConfiguracionConexion.resources
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador_de_cajas.FrmPrincipal.resources
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador_de_cajas.Resources.resources
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador de cajas.vbproj.GenerateResource.Cache
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador de cajas.exe
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador de cajas.xml
+C:\Users\Hiper_Xavier\Desktop\sistema-monitoreo\Administrador de cajas\obj\Debug\Administrador de cajas.pdb
