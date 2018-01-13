@@ -40,9 +40,15 @@ Partial Class FrmPrincipal
         Me.clnIP = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.clnEstado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TbpServidores = New System.Windows.Forms.TabPage()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.TssLblUsuario = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.TssLblServidor = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MnuStPrincipal.SuspendLayout()
         Me.TbOpciones.SuspendLayout()
         Me.tbpCajas.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MnuStPrincipal
@@ -170,16 +176,52 @@ Partial Class FrmPrincipal
         Me.TbpServidores.Location = New System.Drawing.Point(4, 22)
         Me.TbpServidores.Name = "TbpServidores"
         Me.TbpServidores.Padding = New System.Windows.Forms.Padding(3)
-        Me.TbpServidores.Size = New System.Drawing.Size(387, 246)
+        Me.TbpServidores.Size = New System.Drawing.Size(387, 305)
         Me.TbpServidores.TabIndex = 1
         Me.TbpServidores.Text = "Servidores"
         Me.TbpServidores.UseVisualStyleBackColor = True
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.TssLblUsuario, Me.ToolStripStatusLabel2, Me.TssLblServidor})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 606)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(1258, 22)
+        Me.StatusStrip1.TabIndex = 4
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(50, 17)
+        Me.ToolStripStatusLabel1.Text = "Usuario:"
+        '
+        'TssLblUsuario
+        '
+        Me.TssLblUsuario.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TssLblUsuario.Name = "TssLblUsuario"
+        Me.TssLblUsuario.Size = New System.Drawing.Size(12, 17)
+        Me.TssLblUsuario.Text = "_"
+        '
+        'ToolStripStatusLabel2
+        '
+        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(53, 17)
+        Me.ToolStripStatusLabel2.Text = "Servidor:"
+        '
+        'TssLblServidor
+        '
+        Me.TssLblServidor.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TssLblServidor.Name = "TssLblServidor"
+        Me.TssLblServidor.Size = New System.Drawing.Size(12, 17)
+        Me.TssLblServidor.Text = "_"
         '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1258, 628)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.TbOpciones)
         Me.Controls.Add(Me.lvLocales)
         Me.Controls.Add(Me.MnuStPrincipal)
@@ -191,6 +233,8 @@ Partial Class FrmPrincipal
         Me.MnuStPrincipal.PerformLayout()
         Me.TbOpciones.ResumeLayout(False)
         Me.tbpCajas.ResumeLayout(False)
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,4 +258,9 @@ Partial Class FrmPrincipal
     Friend WithEvents clnIP As ColumnHeader
     Friend WithEvents clnEstado As ColumnHeader
     Friend WithEvents TbpServidores As TabPage
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents TssLblUsuario As ToolStripStatusLabel
+    Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
+    Friend WithEvents TssLblServidor As ToolStripStatusLabel
 End Class

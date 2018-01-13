@@ -15,7 +15,8 @@ Public Class FrmPrincipal
 
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Main()
-
+        TssLblUsuario.Text = SG_Usuario
+        TssLblServidor.Text = SG_Direccion_BD
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click

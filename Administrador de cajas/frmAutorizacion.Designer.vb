@@ -60,6 +60,7 @@ Partial Class frmAutorizacion
         '
         Me.txtContrasena.Location = New System.Drawing.Point(113, 74)
         Me.txtContrasena.Name = "txtContrasena"
+        Me.txtContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtContrasena.Size = New System.Drawing.Size(146, 20)
         Me.txtContrasena.TabIndex = 1
         Me.txtContrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
