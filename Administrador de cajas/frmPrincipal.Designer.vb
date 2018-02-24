@@ -31,24 +31,26 @@ Partial Class FrmPrincipal
         Me.RutasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtrasConfiguracionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.lvLocales = New System.Windows.Forms.ListView()
-        Me.TbOpciones = New System.Windows.Forms.TabControl()
-        Me.tbpCajas = New System.Windows.Forms.TabPage()
-        Me.lvCajas = New System.Windows.Forms.ListView()
-        Me.clnNumCaja = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.clnNumImp = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.clnIP = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.clnEstado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.TbpServidores = New System.Windows.Forms.TabPage()
+        Me.lvProductos = New System.Windows.Forms.ListView()
+        Me.CHPlu = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TssLblUsuario = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TssLblServidor = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.txtCodigoProducto = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MnuStPrincipal.SuspendLayout()
-        Me.TbOpciones.SuspendLayout()
-        Me.tbpCajas.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MnuStPrincipal
@@ -56,7 +58,8 @@ Partial Class FrmPrincipal
         Me.MnuStPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.ConfiguracionesToolStripMenuItem})
         Me.MnuStPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.MnuStPrincipal.Name = "MnuStPrincipal"
-        Me.MnuStPrincipal.Size = New System.Drawing.Size(1258, 24)
+        Me.MnuStPrincipal.Padding = New System.Windows.Forms.Padding(10, 3, 0, 3)
+        Me.MnuStPrincipal.Size = New System.Drawing.Size(1274, 25)
         Me.MnuStPrincipal.TabIndex = 0
         Me.MnuStPrincipal.Text = "MenuStrip1"
         '
@@ -64,7 +67,7 @@ Partial Class FrmPrincipal
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarLocalToolStripMenuItem, Me.AdministrarServidoresToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 19)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'AgregarLocalToolStripMenuItem
@@ -89,7 +92,7 @@ Partial Class FrmPrincipal
         '
         Me.ConfiguracionesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RutasToolStripMenuItem, Me.OtrasConfiguracionesToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.ConfiguracionesToolStripMenuItem.Name = "ConfiguracionesToolStripMenuItem"
-        Me.ConfiguracionesToolStripMenuItem.Size = New System.Drawing.Size(106, 20)
+        Me.ConfiguracionesToolStripMenuItem.Size = New System.Drawing.Size(106, 19)
         Me.ConfiguracionesToolStripMenuItem.Text = "Configuraciones"
         '
         'RutasToolStripMenuItem
@@ -110,83 +113,59 @@ Partial Class FrmPrincipal
         Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de..."
         '
-        'lvLocales
+        'lvProductos
         '
-        Me.lvLocales.GridLines = True
-        Me.lvLocales.Location = New System.Drawing.Point(12, 67)
-        Me.lvLocales.Name = "lvLocales"
-        Me.lvLocales.Size = New System.Drawing.Size(395, 203)
-        Me.lvLocales.TabIndex = 1
-        Me.lvLocales.UseCompatibleStateImageBehavior = False
+        Me.lvProductos.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.CHPlu, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.lvProductos.FullRowSelect = True
+        Me.lvProductos.GridLines = True
+        Me.lvProductos.Location = New System.Drawing.Point(14, 76)
+        Me.lvProductos.Margin = New System.Windows.Forms.Padding(5)
+        Me.lvProductos.Name = "lvProductos"
+        Me.lvProductos.Size = New System.Drawing.Size(1251, 396)
+        Me.lvProductos.TabIndex = 1
+        Me.lvProductos.UseCompatibleStateImageBehavior = False
+        Me.lvProductos.View = System.Windows.Forms.View.Details
         '
-        'TbOpciones
+        'CHPlu
         '
-        Me.TbOpciones.Controls.Add(Me.tbpCajas)
-        Me.TbOpciones.Controls.Add(Me.TbpServidores)
-        Me.TbOpciones.Location = New System.Drawing.Point(12, 285)
-        Me.TbOpciones.Name = "TbOpciones"
-        Me.TbOpciones.SelectedIndex = 0
-        Me.TbOpciones.Size = New System.Drawing.Size(395, 331)
-        Me.TbOpciones.TabIndex = 3
+        Me.CHPlu.Text = "PLU"
+        Me.CHPlu.Width = 120
         '
-        'tbpCajas
+        'ColumnHeader2
         '
-        Me.tbpCajas.Controls.Add(Me.lvCajas)
-        Me.tbpCajas.Location = New System.Drawing.Point(4, 22)
-        Me.tbpCajas.Name = "tbpCajas"
-        Me.tbpCajas.Padding = New System.Windows.Forms.Padding(3)
-        Me.tbpCajas.Size = New System.Drawing.Size(387, 305)
-        Me.tbpCajas.TabIndex = 0
-        Me.tbpCajas.Text = "Cajas"
-        Me.tbpCajas.UseVisualStyleBackColor = True
+        Me.ColumnHeader2.Text = "CODIGO BARRA"
+        Me.ColumnHeader2.Width = 200
         '
-        'lvCajas
+        'ColumnHeader3
         '
-        Me.lvCajas.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.clnNumCaja, Me.clnNumImp, Me.clnIP, Me.clnEstado})
-        Me.lvCajas.GridLines = True
-        Me.lvCajas.Location = New System.Drawing.Point(6, 56)
-        Me.lvCajas.Name = "lvCajas"
-        Me.lvCajas.Size = New System.Drawing.Size(368, 243)
-        Me.lvCajas.TabIndex = 0
-        Me.lvCajas.UseCompatibleStateImageBehavior = False
-        Me.lvCajas.View = System.Windows.Forms.View.Details
+        Me.ColumnHeader3.Text = "DESCRIPCION"
+        Me.ColumnHeader3.Width = 370
         '
-        'clnNumCaja
+        'ColumnHeader4
         '
-        Me.clnNumCaja.Text = "Num. Caja"
-        Me.clnNumCaja.Width = 62
+        Me.ColumnHeader4.Text = "PRECIO UNITARIO"
+        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader4.Width = 180
         '
-        'clnNumImp
+        'ColumnHeader5
         '
-        Me.clnNumImp.Text = "Numero Imp."
-        Me.clnNumImp.Width = 75
+        Me.ColumnHeader5.Text = "CANTIDAD"
+        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader5.Width = 170
         '
-        'clnIP
+        'ColumnHeader6
         '
-        Me.clnIP.Text = "IP"
-        Me.clnIP.Width = 111
-        '
-        'clnEstado
-        '
-        Me.clnEstado.Text = "Estado"
-        Me.clnEstado.Width = 87
-        '
-        'TbpServidores
-        '
-        Me.TbpServidores.Location = New System.Drawing.Point(4, 22)
-        Me.TbpServidores.Name = "TbpServidores"
-        Me.TbpServidores.Padding = New System.Windows.Forms.Padding(3)
-        Me.TbpServidores.Size = New System.Drawing.Size(387, 305)
-        Me.TbpServidores.TabIndex = 1
-        Me.TbpServidores.Text = "Servidores"
-        Me.TbpServidores.UseVisualStyleBackColor = True
+        Me.ColumnHeader6.Text = "TOTAL"
+        Me.ColumnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.ColumnHeader6.Width = 170
         '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.TssLblUsuario, Me.ToolStripStatusLabel2, Me.TssLblServidor})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 606)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 655)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1258, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(2, 0, 23, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1274, 22)
         Me.StatusStrip1.TabIndex = 4
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -216,25 +195,83 @@ Partial Class FrmPrincipal
         Me.TssLblServidor.Size = New System.Drawing.Size(12, 17)
         Me.TssLblServidor.Text = "_"
         '
+        'txtCodigoProducto
+        '
+        Me.txtCodigoProducto.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCodigoProducto.Location = New System.Drawing.Point(14, 507)
+        Me.txtCodigoProducto.Margin = New System.Windows.Forms.Padding(5)
+        Me.txtCodigoProducto.Name = "txtCodigoProducto"
+        Me.txtCodigoProducto.Size = New System.Drawing.Size(444, 29)
+        Me.txtCodigoProducto.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(14, 482)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(213, 20)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "CODIGO DE PRODUCTO"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Panel1.Controls.Add(Me.lblTotal)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(978, 481)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(287, 169)
+        Me.Panel1.TabIndex = 9
+        '
+        'lblTotal
+        '
+        Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.ForeColor = System.Drawing.Color.White
+        Me.lblTotal.Location = New System.Drawing.Point(24, 72)
+        Me.lblTotal.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(248, 42)
+        Me.lblTotal.TabIndex = 10
+        Me.lblTotal.Text = "0"
+        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(98, 24)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(97, 29)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "TOTAL"
+        '
         'FrmPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1258, 628)
+        Me.ClientSize = New System.Drawing.Size(1274, 677)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtCodigoProducto)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.TbOpciones)
-        Me.Controls.Add(Me.lvLocales)
+        Me.Controls.Add(Me.lvProductos)
         Me.Controls.Add(Me.MnuStPrincipal)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainMenuStrip = Me.MnuStPrincipal
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "FrmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Principal"
         Me.MnuStPrincipal.ResumeLayout(False)
         Me.MnuStPrincipal.PerformLayout()
-        Me.TbOpciones.ResumeLayout(False)
-        Me.tbpCajas.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -249,18 +286,21 @@ Partial Class FrmPrincipal
     Friend WithEvents RutasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OtrasConfiguracionesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AcercaDeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents lvLocales As ListView
-    Friend WithEvents TbOpciones As TabControl
-    Friend WithEvents tbpCajas As TabPage
-    Friend WithEvents lvCajas As ListView
-    Friend WithEvents clnNumCaja As ColumnHeader
-    Friend WithEvents clnNumImp As ColumnHeader
-    Friend WithEvents clnIP As ColumnHeader
-    Friend WithEvents clnEstado As ColumnHeader
-    Friend WithEvents TbpServidores As TabPage
+    Friend WithEvents lvProductos As ListView
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents TssLblUsuario As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
     Friend WithEvents TssLblServidor As ToolStripStatusLabel
+    Friend WithEvents CHPlu As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents txtCodigoProducto As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents lblTotal As Label
 End Class
